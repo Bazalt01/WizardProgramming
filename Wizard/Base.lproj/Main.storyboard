@@ -694,7 +694,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="actionSearch:" target="XfG-lQ-9wD" id="pmP-yi-0iL"/>
+                                    <action selector="actionOpenProject:" target="XfG-lQ-9wD" id="NCe-W5-VLZ"/>
                                 </connections>
                             </button>
                         </subviews>
