@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFEC78FA1DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC78F91DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift */; };
+		AFEC78FD1DEA31C90021F991 /* WIZProjectHierarhyDirectoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC78FC1DEA31C90021F991 /* WIZProjectHierarhyDirectoryInfo.swift */; };
 		AFF666BA1DE9E72100BF28E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666B91DE9E72100BF28E4 /* AppDelegate.swift */; };
 		AFF666BC1DE9E72100BF28E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666BB1DE9E72100BF28E4 /* ViewController.swift */; };
 		AFF666BE1DE9E72100BF28E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */; };
 		AFF666C11DE9E72100BF28E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF666BF1DE9E72100BF28E4 /* Main.storyboard */; };
+		AFF666C91DE9E81600BF28E4 /* WIZSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666C81DE9E81600BF28E4 /* WIZSearchViewController.swift */; };
+		AFF666CB1DE9EB7300BF28E4 /* WIZSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666CA1DE9EB7300BF28E4 /* WIZSearchViewModel.swift */; };
+		AFF666CD1DE9EB9100BF28E4 /* WIZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666CC1DE9EB9100BF28E4 /* WIZMainViewController.swift */; };
+		AFF666CF1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666CE1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift */; };
+		C6E4FEC67AD6C85B81D7C298 /* Pods_Wizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AE2C6EBDA577AF72F6961FD /* Pods-Wizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.release.xcconfig"; sourceTree = "<group>"; };
+		1F9779C742794E9B7BA91CD7 /* Pods-Wizard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.debug.xcconfig"; sourceTree = "<group>"; };
+		6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEC78F91DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZProjectHierarchyModel.swift; sourceTree = "<group>"; };
+		AFEC78FC1DEA31C90021F991 /* WIZProjectHierarhyDirectoryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZProjectHierarhyDirectoryInfo.swift; sourceTree = "<group>"; };
 		AFF666B61DE9E72100BF28E4 /* Wizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF666B91DE9E72100BF28E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF666BB1DE9E72100BF28E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF666C01DE9E72100BF28E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFF666C21DE9E72100BF28E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF666C81DE9E81600BF28E4 /* WIZSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSearchViewController.swift; sourceTree = "<group>"; };
+		AFF666CA1DE9EB7300BF28E4 /* WIZSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSearchViewModel.swift; sourceTree = "<group>"; };
+		AFF666CC1DE9EB9100BF28E4 /* WIZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZMainViewController.swift; sourceTree = "<group>"; };
+		AFF666CE1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZMainVeiwModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,19 +43,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E4FEC67AD6C85B81D7C298 /* Pods_Wizard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97E32AAA032B440E58BC7D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFEC78FB1DEA2E180021F991 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFEC78F91DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift */,
+				AFEC78FC1DEA31C90021F991 /* WIZProjectHierarhyDirectoryInfo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AFF666AD1DE9E72000BF28E4 = {
 			isa = PBXGroup;
 			children = (
 				AFF666B81DE9E72100BF28E4 /* Wizard */,
 				AFF666B71DE9E72100BF28E4 /* Products */,
+				ED3947DD45F0E47CFBD35AC4 /* Pods */,
+				97E32AAA032B440E58BC7D9F /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		AFF666B71DE9E72100BF28E4 /* Products */ = {
 			isa = PBXGroup;
@@ -54,11 +93,25 @@
 			children = (
 				AFF666B91DE9E72100BF28E4 /* AppDelegate.swift */,
 				AFF666BB1DE9E72100BF28E4 /* ViewController.swift */,
+				AFF666C81DE9E81600BF28E4 /* WIZSearchViewController.swift */,
+				AFF666CA1DE9EB7300BF28E4 /* WIZSearchViewModel.swift */,
+				AFF666CC1DE9EB9100BF28E4 /* WIZMainViewController.swift */,
+				AFF666CE1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift */,
+				AFEC78FB1DEA2E180021F991 /* Models */,
 				AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */,
 				AFF666BF1DE9E72100BF28E4 /* Main.storyboard */,
 				AFF666C21DE9E72100BF28E4 /* Info.plist */,
 			);
 			path = Wizard;
+			sourceTree = "<group>";
+		};
+		ED3947DD45F0E47CFBD35AC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F9779C742794E9B7BA91CD7 /* Pods-Wizard.debug.xcconfig */,
+				1AE2C6EBDA577AF72F6961FD /* Pods-Wizard.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF666C51DE9E72100BF28E4 /* Build configuration list for PBXNativeTarget "Wizard" */;
 			buildPhases = (
+				266D29FCFFDC55D2C2BCC8D4 /* [CP] Check Pods Manifest.lock */,
 				AFF666B21DE9E72000BF28E4 /* Sources */,
 				AFF666B31DE9E72000BF28E4 /* Frameworks */,
 				AFF666B41DE9E72000BF28E4 /* Resources */,
+				CAFA02165542E40BF779353C /* [CP] Embed Pods Frameworks */,
+				E0122A3A64BB44CAA206A2C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,13 +183,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		266D29FCFFDC55D2C2BCC8D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAFA02165542E40BF779353C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wizard/Pods-Wizard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0122A3A64BB44CAA206A2C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wizard/Pods-Wizard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFF666B21DE9E72000BF28E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEC78FA1DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift in Sources */,
 				AFF666BC1DE9E72100BF28E4 /* ViewController.swift in Sources */,
+				AFF666CD1DE9EB9100BF28E4 /* WIZMainViewController.swift in Sources */,
 				AFF666BA1DE9E72100BF28E4 /* AppDelegate.swift in Sources */,
+				AFF666C91DE9E81600BF28E4 /* WIZSearchViewController.swift in Sources */,
+				AFF666CF1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift in Sources */,
+				AFEC78FD1DEA31C90021F991 /* WIZProjectHierarhyDirectoryInfo.swift in Sources */,
+				AFF666CB1DE9EB7300BF28E4 /* WIZSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +353,7 @@
 		};
 		AFF666C61DE9E72100BF28E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9779C742794E9B7BA91CD7 /* Pods-Wizard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -256,6 +367,7 @@
 		};
 		AFF666C71DE9E72100BF28E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE2C6EBDA577AF72F6961FD /* Pods-Wizard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -286,6 +398,7 @@
 				AFF666C71DE9E72100BF28E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
