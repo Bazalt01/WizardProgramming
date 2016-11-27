@@ -66,16 +66,20 @@ class WIZMainViewController: NSViewController {
   
     rootOfProject = WIZProjectHierarhyDirectoryInfo(parent: nil, url: projectURL)
     
-    
+    rootOfProject!.readChildren(withExtentionRequerement: ["h", "m"])
   }
-  
   
   
   //................................................................................................
   // MARK: - Actions
   
-  @IBAction func actionSearch(_ sender: Any) {
+  @IBAction func actionOpenProject(_ sender: Any) {
     
+    openProject()
+  }
+  
+  @IBAction func actionSearch(_ sender: Any) {
+
     let controller = self.storyboard?.instantiateController( withIdentifier: kWIZSearchViewControllerIdentifier)
     
     self.presentViewControllerAsSheet(controller as! NSViewController)
