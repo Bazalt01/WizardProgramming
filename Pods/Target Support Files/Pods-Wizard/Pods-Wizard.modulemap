@@ -1,6 +1,0 @@
-framework module Pods_Wizard {
-  umbrella header "Pods-Wizard-umbrella.h"
-
-  export *
-  module * { export * }
-}
