@@ -9,6 +9,7 @@
 import Cocoa
 
 let kWIZSearchViewControllerIdentifier = "WIZSearchViewController"
+let kWIZHierarchyViewControllerIdentifier = "WIZHierarchyViewController"
 
 class WIZMainViewController: NSViewController {
 
@@ -22,7 +23,7 @@ class WIZMainViewController: NSViewController {
   //------------------------------------------------------------------------------------------------
   // MARK: - Private
   
-  private var rootOfProject : WIZProjectHierarhyDirectoryInfo?
+  private var rootOfProject : WIZProjectHierarchyDirectoryInfo?
 		
   
   var _viewModel : WIZMainVeiwModel? {
@@ -37,6 +38,8 @@ class WIZMainViewController: NSViewController {
     }
   }
   
+  private var hierarchyViewController : WIZHierarchyViewController?
+  
   
   //................................................................................................
   // MARK: - Overrides
@@ -44,6 +47,8 @@ class WIZMainViewController: NSViewController {
   override func viewDidLoad () {
       
     super.viewDidLoad ()
+    
+    
   }
   
   //................................................................................................
@@ -64,9 +69,17 @@ class WIZMainViewController: NSViewController {
   
   func readProject (projectURL: URL) {
   
-    rootOfProject = WIZProjectHierarhyDirectoryInfo(parent: nil, url: projectURL)
+    rootOfProject = WIZProjectHierarchyDirectoryInfo(parent: nil, url: projectURL)
     
-    rootOfProject!.readChildren(withExtentionRequerement: ["h", "m"])
+    let hierarchyViewModel = WIZHierarchyViewModel(rootOfProject: rootOfProject!)
+    
+    for viewController in self.childViewControllers {
+    
+      if viewController is WIZHierarchyViewController {
+      
+        (viewController as! WIZHierarchyViewController).setViewModel(viewModel: hierarchyViewModel)
+      }
+    }
   }
   
   
