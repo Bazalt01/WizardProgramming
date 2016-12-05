@@ -8,9 +8,20 @@
 
 import Cocoa
 
-let kWIZSearchViewControllerIdentifier = "WIZSearchViewController"
 
-class WIZMainViewController: NSViewController {
+//--------------------------------------------------------------------------------------------------
+// MARK: - Locals
+
+let kWIZSearchViewControllerIdentifier = "WIZSearchViewController"
+let kWIZHierarchyViewControllerIdentifier = "WIZHierarchyViewController"
+
+let kProjectDirectory = "projectDirectory"
+
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZMainViewController Implementation
+
+class WIZMainViewController: NSViewController, WIZHierarchyViewControllerDelegate {
 
   
   //................................................................................................
@@ -19,11 +30,16 @@ class WIZMainViewController: NSViewController {
   var dictionaryFileUrlsOfProject = [NSURL]()
   
   
-  //------------------------------------------------------------------------------------------------
-  // MARK: - Private
+  //................................................................................................
+  // MARK: - Private Properties
   
-  private var rootOfProject : WIZProjectHierarhyDirectoryInfo?
+  private var rootOfProject : WIZProjectHierarchyDirectoryInfo?
+  
+  private weak var hierarchyController : WIZHierarchyViewController?
+  
+  private weak var codePresentationController : WIZCodePresentationViewController?
 		
+  
   
   var _viewModel : WIZMainVeiwModel? {
       
@@ -37,6 +53,8 @@ class WIZMainViewController: NSViewController {
     }
   }
   
+  private var hierarchyViewController : WIZHierarchyViewController?
+  
   
   //................................................................................................
   // MARK: - Overrides
@@ -46,27 +64,81 @@ class WIZMainViewController: NSViewController {
     super.viewDidLoad ()
   }
   
+  override func viewDidAppear() {
+    
+    for viewController in self.childViewControllers {
+      
+      if viewController is WIZHierarchyViewController {
+        
+        hierarchyController = viewController as? WIZHierarchyViewController
+        
+        hierarchyController!.delegate = self
+      }
+        
+      else if viewController is WIZCodePresentationViewController {
+        
+        codePresentationController = viewController as? WIZCodePresentationViewController
+      }
+    }
+    
+    let defaults = UserDefaults.standard
+    
+    if let projectURL = defaults.url(forKey: kProjectDirectory) {
+      
+      readProject(projectURL: projectURL)
+    }
+  }
+  
+  
   //................................................................................................
   // MARK: - Internal Methods
   
   func openProject () {
     
+    let defaults = UserDefaults.standard
+    
+    
     let openDialog: NSOpenPanel = NSOpenPanel()
+    
     openDialog.canChooseDirectories = true
+    
     openDialog.runModal()
     
+    
     guard let projectURL = openDialog.url else {
+    
       return
     }
     
     readProject(projectURL: projectURL)
+    
+    defaults.set(projectURL, forKey: kProjectDirectory)
   }
   
   func readProject (projectURL: URL) {
   
-    rootOfProject = WIZProjectHierarhyDirectoryInfo(parent: nil, url: projectURL)
+    rootOfProject = WIZProjectHierarchyDirectoryInfo(parent: nil, url: projectURL)
     
-    rootOfProject!.readChildren(withExtentionRequerement: ["h", "m"])
+    let hierarchyViewModel = WIZHierarchyViewModel(rootOfProject: rootOfProject!)
+    
+    guard let hc = hierarchyController else {
+      
+      return
+    }
+    
+    hc.setViewModel(viewModel: hierarchyViewModel)
+  }
+  
+  
+  //................................................................................................
+  // MARK: - WIZHierarchyViewControllerDelegate Implementation
+  
+  func hierarchyController (sender: WIZHierarchyViewController, didSelectFile file: WIZProjectHierarchyFile) {
+  
+    if let cpc = codePresentationController {
+    
+      cpc.openFile(file: file)
+    }
   }
   
   

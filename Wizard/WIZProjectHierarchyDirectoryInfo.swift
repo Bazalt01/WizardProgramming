@@ -1,5 +1,5 @@
 //
-//  WIZProjectHierarhyDirectoryInfo.swift
+//  WIZProjectHierarchyDirectoryInfo.swift
 //  Wizard
 //
 //  Created by Глеб Токмаков on 27.11.16.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class WIZProjectHierarhyDirectoryInfo: WIZProjectHierarchyModel {
+class WIZProjectHierarchyDirectoryInfo: WIZProjectHierarchyModel {
 
   
   //................................................................................................
@@ -40,21 +40,22 @@ class WIZProjectHierarhyDirectoryInfo: WIZProjectHierarchyModel {
           
           if isDirectory.boolValue {
           
-            let child = WIZProjectHierarhyDirectoryInfo(parent: self, url: checkURL)
-            
+            let child = WIZProjectHierarchyDirectoryInfo(parent: self, url: checkURL)
+
             child.readChildren(withExtentionRequerement: extentionRequerement)
             
             children.append(child)
           }
+            
           else {
             
-            children.append(WIZProjectHierarchyModel(parent: self, url: checkURL))
+            children.append(WIZProjectHierarchyFile(parent: self, url: checkURL))
           }
         }
       }
     } catch {
       
-      return
+      print("Directory \"\(url.description)\" isn't read")
     }
   }
   
