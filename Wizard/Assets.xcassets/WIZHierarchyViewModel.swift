@@ -15,6 +15,7 @@ class WIZHierarchyViewModel {
   // MARK: - Public Methods
   
   public private(set) var rootOfProject : WIZProjectHierarchyDirectoryInfo
+  public private(set) var searchResult  : WIZProjectHierarchyModel?
   
   
   //................................................................................................

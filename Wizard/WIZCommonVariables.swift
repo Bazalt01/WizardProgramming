@@ -7,7 +7,3 @@
 //
 
 import Cocoa
-
-class WIZCommonVariables: NSObject {
-
-}

@@ -8,6 +8,35 @@
 
 import Cocoa
 
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZProjectHierarchyFile Implementation
+
 class WIZProjectHierarchyFile: WIZProjectHierarchyModel {
 
+  
+  //................................................................................................
+  // MARK: - Public Read-only Properties
+  
+  public private(set) var content : String?
+  
+  public private(set) var formatterCode : NSAttributedString?
+  
+  
+  func updateContent () {
+    
+    do {
+      let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
+      
+      content = string
+      
+      let spesialWords = [(word: "UIView", color: NSColor.red)]
+      
+      let formatter = WIZSyntaxPatternFormatter(spesialWords: spesialWords)
+      
+      formatterCode = formatter.formatterStringToReadableCode(string: string)
+    }
+    catch {
+      print("File \(url.description) isn't read")
+    }
+  }
 }

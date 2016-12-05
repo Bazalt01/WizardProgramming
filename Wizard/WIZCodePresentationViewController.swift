@@ -8,14 +8,43 @@
 
 import Cocoa
 
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZCodePresentationViewController Implementation
+
 class WIZCodePresentationViewController: NSViewController {
 
+  
+  //................................................................................................
+  // MARK: - Private Storyboard Properties
+  
+    @IBOutlet var textView: NSTextView!
+  
+  
+  //................................................................................................
+  // MARK: - Overrides
+  
+  override func viewDidLoad() {
     
-    @IBOutlet weak var textView: NSTextView!
+    super.viewDidLoad()
+  }
+  
+  
+  //................................................................................................
+  // MARK: - Public Methods
+  
+  func openFile (file: WIZProjectHierarchyFile) {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    if file.content == nil {
+      
+      file.updateContent()
     }
     
+    guard let content = file.formatterCode else {
+    
+      return
+    }
+    
+    textView.textStorage?.setAttributedString(content)
+  }
 }

@@ -46,15 +46,16 @@ class WIZProjectHierarchyDirectoryInfo: WIZProjectHierarchyModel {
             
             children.append(child)
           }
+            
           else {
             
-            children.append(WIZProjectHierarchyModel(parent: self, url: checkURL))
+            children.append(WIZProjectHierarchyFile(parent: self, url: checkURL))
           }
         }
       }
     } catch {
       
-      return
+      print("Directory \"\(url.description)\" isn't read")
     }
   }
   

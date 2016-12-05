@@ -17,9 +17,18 @@ let kDirectoryCellReuseIdentifier = "directoryCellReuseIdentifier"
 
 
 //--------------------------------------------------------------------------------------------------
+// MARK: - WIZHierarchyViewControllerDelegate Definition
+
+protocol WIZHierarchyViewControllerDelegate {
+  
+  func hierarchyController (sender: WIZHierarchyViewController, didSelectFile file: WIZProjectHierarchyFile)
+}
+
+
+//--------------------------------------------------------------------------------------------------
 // MARK: - WIZHierarchyViewController
 
-class WIZHierarchyViewController: NSViewController, NSOutlineViewDelegate, NSOutlineViewDataSource {
+class WIZHierarchyViewController: NSViewController, NSOutlineViewDelegate, NSTableViewDelegate, NSOutlineViewDataSource {
 
   
   //................................................................................................
@@ -27,10 +36,17 @@ class WIZHierarchyViewController: NSViewController, NSOutlineViewDelegate, NSOut
 
   @IBOutlet weak var outlineView: NSOutlineView!
   
+  
   //................................................................................................
   // MARK: - Private Properties
   
   private var viewModel : WIZHierarchyViewModel?
+  
+  
+  //................................................................................................
+  // MARK: - Public Methods
+  
+  var delegate : WIZHierarchyViewControllerDelegate?
   
   
   //................................................................................................
@@ -44,8 +60,6 @@ class WIZHierarchyViewController: NSViewController, NSOutlineViewDelegate, NSOut
   }
   
   
-  
-  
   //................................................................................................
   // MARK: - Overrides
   
@@ -57,7 +71,7 @@ class WIZHierarchyViewController: NSViewController, NSOutlineViewDelegate, NSOut
   
   
   //................................................................................................
-  // MARK: - NSTableViewDelegate Implementation
+  // MARK: - NSOutlineViewDelegate Implementation
   
   func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
   
@@ -90,11 +104,23 @@ class WIZHierarchyViewController: NSViewController, NSOutlineViewDelegate, NSOut
     return view
   }
   
+  func outlineViewSelectionDidChange(_ notification: Notification) {
+  
+    let selectedItem = outlineView.item (atRow: outlineView.selectedRow)
+    
+    if selectedItem is WIZProjectHierarchyFile {
+      
+      if let del = delegate {
+      
+        del.hierarchyController(sender: self, didSelectFile: selectedItem as! WIZProjectHierarchyFile)
+      }
+    }
+  }
+  
   
   //................................................................................................
-  // MARK: - NSTableViewDataSource Implementation
+  // MARK: - NSOutlineViewDataSource Implementation
   
-
   func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
     
     guard let vm = self.viewModel else {

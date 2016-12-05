@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFCEA4001DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */; };
 		AFE0A9831DEB587E00438CD7 /* WIZHierarchyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0A9821DEB587E00438CD7 /* WIZHierarchyViewController.swift */; };
 		AFE0A9861DEB58B100438CD7 /* WIZHierarchyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0A9851DEB58B100438CD7 /* WIZHierarchyViewModel.swift */; };
 		AFE0A9881DEB595000438CD7 /* WIZCodePresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0A9871DEB595000438CD7 /* WIZCodePresentationViewController.swift */; };
@@ -20,6 +21,8 @@
 		AFF666CB1DE9EB7300BF28E4 /* WIZSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666CA1DE9EB7300BF28E4 /* WIZSearchViewModel.swift */; };
 		AFF666CD1DE9EB9100BF28E4 /* WIZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666CC1DE9EB9100BF28E4 /* WIZMainViewController.swift */; };
 		AFF666CF1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF666CE1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift */; };
+		AFFC59591DF1702200725056 /* WIZProjectHierarchyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC59581DF1702200725056 /* WIZProjectHierarchyFile.swift */; };
+		AFFC595B1DF178E800725056 /* WIZCommonVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC595A1DF178E800725056 /* WIZCommonVariables.swift */; };
 		C6E4FEC67AD6C85B81D7C298 /* Pods_Wizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,7 @@
 		1AE2C6EBDA577AF72F6961FD /* Pods-Wizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.release.xcconfig"; sourceTree = "<group>"; };
 		1F9779C742794E9B7BA91CD7 /* Pods-Wizard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.debug.xcconfig"; sourceTree = "<group>"; };
 		6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSyntaxPatternFormatter.swift; sourceTree = "<group>"; };
 		AFE0A9821DEB587E00438CD7 /* WIZHierarchyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZHierarchyViewController.swift; sourceTree = "<group>"; };
 		AFE0A9851DEB58B100438CD7 /* WIZHierarchyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WIZHierarchyViewModel.swift; path = Assets.xcassets/WIZHierarchyViewModel.swift; sourceTree = "<group>"; };
 		AFE0A9871DEB595000438CD7 /* WIZCodePresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZCodePresentationViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		AFF666CA1DE9EB7300BF28E4 /* WIZSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSearchViewModel.swift; sourceTree = "<group>"; };
 		AFF666CC1DE9EB9100BF28E4 /* WIZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZMainViewController.swift; sourceTree = "<group>"; };
 		AFF666CE1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZMainVeiwModel.swift; sourceTree = "<group>"; };
+		AFFC59581DF1702200725056 /* WIZProjectHierarchyFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZProjectHierarchyFile.swift; sourceTree = "<group>"; };
+		AFFC595A1DF178E800725056 /* WIZCommonVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZCommonVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				AFEC78F91DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift */,
+				AFFC59581DF1702200725056 /* WIZProjectHierarchyFile.swift */,
 				AFEC78FC1DEA31C90021F991 /* WIZProjectHierarchyDirectoryInfo.swift */,
 			);
 			name = Models;
@@ -147,6 +154,8 @@
 				AFF666B91DE9E72100BF28E4 /* AppDelegate.swift */,
 				AFE0A9841DEB588900438CD7 /* UI */,
 				AFEC78FB1DEA2E180021F991 /* Models */,
+				AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */,
+				AFFC595A1DF178E800725056 /* WIZCommonVariables.swift */,
 				AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */,
 				AFF666BF1DE9E72100BF28E4 /* Main.storyboard */,
 				AFF666C21DE9E72100BF28E4 /* Info.plist */,
@@ -289,13 +298,16 @@
 				AFF666CD1DE9EB9100BF28E4 /* WIZMainViewController.swift in Sources */,
 				AFE0A9881DEB595000438CD7 /* WIZCodePresentationViewController.swift in Sources */,
 				AFF666BA1DE9E72100BF28E4 /* AppDelegate.swift in Sources */,
+				AFFC59591DF1702200725056 /* WIZProjectHierarchyFile.swift in Sources */,
 				AFF666C91DE9E81600BF28E4 /* WIZSearchViewController.swift in Sources */,
 				AFE0A98A1DEB596D00438CD7 /* WIZCodePresentationViewModel.swift in Sources */,
 				AFF666CF1DE9EBA400BF28E4 /* WIZMainVeiwModel.swift in Sources */,
+				AFFC595B1DF178E800725056 /* WIZCommonVariables.swift in Sources */,
 				AFE0A9831DEB587E00438CD7 /* WIZHierarchyViewController.swift in Sources */,
 				AFEC78FD1DEA31C90021F991 /* WIZProjectHierarchyDirectoryInfo.swift in Sources */,
 				AFE0A9861DEB58B100438CD7 /* WIZHierarchyViewModel.swift in Sources */,
 				AFF666CB1DE9EB7300BF28E4 /* WIZSearchViewModel.swift in Sources */,
+				AFCEA4001DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

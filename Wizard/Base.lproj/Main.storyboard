@@ -886,14 +886,14 @@
                             <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-3v-IB9">
                                 <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
                                 <clipView key="contentView" id="Rrb-bl-I6q">
-                                    <rect key="frame" x="1" y="1" width="483" height="298"/>
+                                    <rect key="frame" x="1" y="1" width="498" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="t3u-wy-FhJ">
-                                            <rect key="frame" x="0.0" y="-0.5" width="483" height="298"/>
+                                        <textView editable="NO" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="t3u-wy-FhJ">
+                                            <rect key="frame" x="0.0" y="-0.5" width="498" height="298"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="483" height="298"/>
+                                            <size key="minSize" width="498" height="298"/>
                                             <size key="maxSize" width="500" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -905,7 +905,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="t6l-vb-fhL">
-                                    <rect key="frame" x="484" y="1" width="15" height="298"/>
+                                    <rect key="frame" x="483" y="1" width="16" height="298"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -918,7 +918,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="SRX-3v-IB9" id="iZ4-gU-7mY"/>
+                        <outlet property="textView" destination="t3u-wy-FhJ" id="j1d-MU-gbD"/>
                     </connections>
                 </viewController>
                 <customObject id="BLp-xc-e9W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -927,7 +927,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="file" width="153" height="194"/>
+        <image name="file" width="300" height="388"/>
         <image name="folder" width="512" height="512"/>
     </resources>
 </document>
