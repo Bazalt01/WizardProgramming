@@ -1,0 +1,10 @@
+NSLocalizedRecoverySuggestionErrorKey,
+NSLocalizedRecoveryOptionsErrorKey,
+NSLocalizedFailureReasonErrorKey,
+NSRecoveryAttempterErrorKey,
+NSLocalizedDescriptionKey,
+NSStringEncodingErrorKey,
+NSHelpAnchorErrorKey,
+NSFilePathErrorKey,
+NSURLErrorDomain,
+NSURLErrorKey

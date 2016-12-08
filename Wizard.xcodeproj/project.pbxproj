@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF80FD131DF8BD5000AAD646 /* otherFunctions.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD121DF8BD5000AAD646 /* otherFunctions.txt */; };
+		AF80FD151DF8BEC600AAD646 /* macros.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD141DF8BEC600AAD646 /* macros.txt */; };
+		AF80FD171DF8C1E900AAD646 /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD161DF8C1E900AAD646 /* keywords.txt */; };
+		AF80FD191DF8C3A800AAD646 /* otherConstants.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD181DF8C3A800AAD646 /* otherConstants.txt */; };
+		AF80FD1B1DF8C52100AAD646 /* otherTypeNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD1A1DF8C52100AAD646 /* otherTypeNames.txt */; };
+		AF9BF5D21DF73E9B000B148B /* baseClasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF9BF5D11DF73E9B000B148B /* baseClasses.txt */; };
+		AF9BF5D41DF741BB000B148B /* WIZSpecialWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */; };
 		AFCEA4001DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */; };
 		AFE0A9831DEB587E00438CD7 /* WIZHierarchyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0A9821DEB587E00438CD7 /* WIZHierarchyViewController.swift */; };
 		AFE0A9861DEB58B100438CD7 /* WIZHierarchyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0A9851DEB58B100438CD7 /* WIZHierarchyViewModel.swift */; };
@@ -30,6 +37,13 @@
 		1AE2C6EBDA577AF72F6961FD /* Pods-Wizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.release.xcconfig"; sourceTree = "<group>"; };
 		1F9779C742794E9B7BA91CD7 /* Pods-Wizard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.debug.xcconfig"; sourceTree = "<group>"; };
 		6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF80FD121DF8BD5000AAD646 /* otherFunctions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = otherFunctions.txt; sourceTree = SOURCE_ROOT; };
+		AF80FD141DF8BEC600AAD646 /* macros.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macros.txt; sourceTree = SOURCE_ROOT; };
+		AF80FD161DF8C1E900AAD646 /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = SOURCE_ROOT; };
+		AF80FD181DF8C3A800AAD646 /* otherConstants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = otherConstants.txt; sourceTree = SOURCE_ROOT; };
+		AF80FD1A1DF8C52100AAD646 /* otherTypeNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = otherTypeNames.txt; sourceTree = SOURCE_ROOT; };
+		AF9BF5D11DF73E9B000B148B /* baseClasses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baseClasses.txt; sourceTree = SOURCE_ROOT; };
+		AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSpecialWords.swift; sourceTree = "<group>"; };
 		AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSyntaxPatternFormatter.swift; sourceTree = "<group>"; };
 		AFE0A9821DEB587E00438CD7 /* WIZHierarchyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZHierarchyViewController.swift; sourceTree = "<group>"; };
 		AFE0A9851DEB58B100438CD7 /* WIZHierarchyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WIZHierarchyViewModel.swift; path = Assets.xcassets/WIZHierarchyViewModel.swift; sourceTree = "<group>"; };
@@ -151,10 +165,17 @@
 		AFF666B81DE9E72100BF28E4 /* Wizard */ = {
 			isa = PBXGroup;
 			children = (
+				AF9BF5D11DF73E9B000B148B /* baseClasses.txt */,
+				AF80FD121DF8BD5000AAD646 /* otherFunctions.txt */,
+				AF80FD141DF8BEC600AAD646 /* macros.txt */,
+				AF80FD161DF8C1E900AAD646 /* keywords.txt */,
+				AF80FD1A1DF8C52100AAD646 /* otherTypeNames.txt */,
+				AF80FD181DF8C3A800AAD646 /* otherConstants.txt */,
 				AFF666B91DE9E72100BF28E4 /* AppDelegate.swift */,
 				AFE0A9841DEB588900438CD7 /* UI */,
 				AFEC78FB1DEA2E180021F991 /* Models */,
 				AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */,
+				AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */,
 				AFFC595A1DF178E800725056 /* WIZCommonVariables.swift */,
 				AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */,
 				AFF666BF1DE9E72100BF28E4 /* Main.storyboard */,
@@ -234,8 +255,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF80FD1B1DF8C52100AAD646 /* otherTypeNames.txt in Resources */,
 				AFF666BE1DE9E72100BF28E4 /* Assets.xcassets in Resources */,
 				AFF666C11DE9E72100BF28E4 /* Main.storyboard in Resources */,
+				AF80FD151DF8BEC600AAD646 /* macros.txt in Resources */,
+				AF80FD191DF8C3A800AAD646 /* otherConstants.txt in Resources */,
+				AF9BF5D21DF73E9B000B148B /* baseClasses.txt in Resources */,
+				AF80FD171DF8C1E900AAD646 /* keywords.txt in Resources */,
+				AF80FD131DF8BD5000AAD646 /* otherFunctions.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +335,7 @@
 				AFE0A9861DEB58B100438CD7 /* WIZHierarchyViewModel.swift in Sources */,
 				AFF666CB1DE9EB7300BF28E4 /* WIZSearchViewModel.swift in Sources */,
 				AFCEA4001DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift in Sources */,
+				AF9BF5D41DF741BB000B148B /* WIZSpecialWords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

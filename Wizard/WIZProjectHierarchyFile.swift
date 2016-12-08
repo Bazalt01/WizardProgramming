@@ -29,9 +29,12 @@ class WIZProjectHierarchyFile: WIZProjectHierarchyModel {
       
       content = string
       
-      let spesialWords = [(word: "UIView", color: NSColor.red)]
       
-      let formatter = WIZSyntaxPatternFormatter(spesialWords: spesialWords)
+//      let stringColor = NSColor.init(hue: 0.0, saturation: 0.89, brightness: 0.77, alpha: 0.8)
+      
+      
+      
+      let formatter = WIZSyntaxPatternFormatter()
       
       formatterCode = formatter.formatterStringToReadableCode(string: string)
     }
