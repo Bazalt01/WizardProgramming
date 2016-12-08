@@ -137,44 +137,6 @@ class WIZSyntaxPatternFormatter {
     return NSAttributedString(string: code)
   }
   
-//  
-//  func findAndSetColor (forCode code: NSAttributedString, withColor color: NSColor, findString: String) -> NSAttributedString {
-//    
-//    let result = NSMutableAttributedString (attributedString: code)
-//    
-//    let string = result.string as NSString
-//    
-//    var location = 0
-//    
-//    var range = string.range(of: findString)
-//  
-//    
-//    while range.length > 0 {
-//      
-//      let resultRange = NSMakeRange(location + range.location, range.length)
-//      
-//      if !checkRange(checkRange: resultRange) {
-//        
-//        result.setAttributes([NSForegroundColorAttributeName : color], range: resultRange)
-//        
-//        allUsedRanges.append(resultRange)
-//      }
-//      
-//      location += range.length + range.location
-//      
-//      let lenght = result.length - location
-//      
-//      let subrange = NSMakeRange(location, lenght)
-//      
-//      let substring = string.substring(with: subrange) as NSString
-//      
-//      
-//      range = substring.range(of: findString)
-//    }
-//    
-//    return result
-//  }
-  
   func findAndSetColor (forCode code: NSAttributedString, coupleList: [Couple]) -> NSAttributedString {
     
     let result = NSMutableAttributedString (attributedString: code)

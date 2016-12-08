@@ -157,4 +157,15 @@ class WIZSpecialWords {
       specialWords[word] = systemClassColor()
     }
   }
+  
+  func addSpecialWords (words: [String], color: NSColor) {
+  
+    for word in words {
+      
+      if specialWords[word] == nil {
+      
+        specialWords[word] = color
+      }
+    }
+  }
 }

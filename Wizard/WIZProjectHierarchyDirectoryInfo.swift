@@ -49,6 +49,12 @@ class WIZProjectHierarchyDirectoryInfo: WIZProjectHierarchyModel {
             
           else {
             
+            let finder = WIZCustomSpecialWordsFinder()
+            
+            let customClasses = finder.findCustomClasses(url: checkURL)
+            
+            WIZSpecialWords.sharedInstance.addSpecialWords(words: customClasses, color: customClassesColor())
+            
             children.append(WIZProjectHierarchyFile(parent: self, url: checkURL))
           }
         }

@@ -12,6 +12,7 @@
 		AF80FD171DF8C1E900AAD646 /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD161DF8C1E900AAD646 /* keywords.txt */; };
 		AF80FD191DF8C3A800AAD646 /* otherConstants.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD181DF8C3A800AAD646 /* otherConstants.txt */; };
 		AF80FD1B1DF8C52100AAD646 /* otherTypeNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD1A1DF8C52100AAD646 /* otherTypeNames.txt */; };
+		AF888AA11DFA03AB00912779 /* WIZCustomSpecialWordsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF888AA01DFA03AB00912779 /* WIZCustomSpecialWordsFinder.swift */; };
 		AF9BF5D21DF73E9B000B148B /* baseClasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF9BF5D11DF73E9B000B148B /* baseClasses.txt */; };
 		AF9BF5D41DF741BB000B148B /* WIZSpecialWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */; };
 		AFCEA4001DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */; };
@@ -42,6 +43,7 @@
 		AF80FD161DF8C1E900AAD646 /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = SOURCE_ROOT; };
 		AF80FD181DF8C3A800AAD646 /* otherConstants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = otherConstants.txt; sourceTree = SOURCE_ROOT; };
 		AF80FD1A1DF8C52100AAD646 /* otherTypeNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = otherTypeNames.txt; sourceTree = SOURCE_ROOT; };
+		AF888AA01DFA03AB00912779 /* WIZCustomSpecialWordsFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZCustomSpecialWordsFinder.swift; sourceTree = "<group>"; };
 		AF9BF5D11DF73E9B000B148B /* baseClasses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baseClasses.txt; sourceTree = SOURCE_ROOT; };
 		AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSpecialWords.swift; sourceTree = "<group>"; };
 		AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSyntaxPatternFormatter.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */,
 				AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */,
 				AFFC595A1DF178E800725056 /* WIZCommonVariables.swift */,
+				AF888AA01DFA03AB00912779 /* WIZCustomSpecialWordsFinder.swift */,
 				AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */,
 				AFF666BF1DE9E72100BF28E4 /* Main.storyboard */,
 				AFF666C21DE9E72100BF28E4 /* Info.plist */,
@@ -332,6 +335,7 @@
 				AFFC595B1DF178E800725056 /* WIZCommonVariables.swift in Sources */,
 				AFE0A9831DEB587E00438CD7 /* WIZHierarchyViewController.swift in Sources */,
 				AFEC78FD1DEA31C90021F991 /* WIZProjectHierarchyDirectoryInfo.swift in Sources */,
+				AF888AA11DFA03AB00912779 /* WIZCustomSpecialWordsFinder.swift in Sources */,
 				AFE0A9861DEB58B100438CD7 /* WIZHierarchyViewModel.swift in Sources */,
 				AFF666CB1DE9EB7300BF28E4 /* WIZSearchViewModel.swift in Sources */,
 				AFCEA4001DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift in Sources */,

@@ -27,12 +27,7 @@ class WIZProjectHierarchyFile: WIZProjectHierarchyModel {
     do {
       let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
       
-      content = string
-      
-      
-//      let stringColor = NSColor.init(hue: 0.0, saturation: 0.89, brightness: 0.77, alpha: 0.8)
-      
-      
+      content = string      
       
       let formatter = WIZSyntaxPatternFormatter()
       
