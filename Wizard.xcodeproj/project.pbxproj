@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF60D6451DFC40E200171D49 /* WIZCustomSpecialWordsFinderObjectiveC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60D6441DFC40E200171D49 /* WIZCustomSpecialWordsFinderObjectiveC.swift */; };
 		AF80FD131DF8BD5000AAD646 /* otherFunctions.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD121DF8BD5000AAD646 /* otherFunctions.txt */; };
 		AF80FD151DF8BEC600AAD646 /* macros.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD141DF8BEC600AAD646 /* macros.txt */; };
 		AF80FD171DF8C1E900AAD646 /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF80FD161DF8C1E900AAD646 /* keywords.txt */; };
@@ -38,6 +39,7 @@
 		1AE2C6EBDA577AF72F6961FD /* Pods-Wizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.release.xcconfig"; sourceTree = "<group>"; };
 		1F9779C742794E9B7BA91CD7 /* Pods-Wizard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wizard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wizard/Pods-Wizard.debug.xcconfig"; sourceTree = "<group>"; };
 		6380071847B6C3AF2DAD272A /* Pods_Wizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF60D6441DFC40E200171D49 /* WIZCustomSpecialWordsFinderObjectiveC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZCustomSpecialWordsFinderObjectiveC.swift; sourceTree = "<group>"; };
 		AF80FD121DF8BD5000AAD646 /* otherFunctions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = otherFunctions.txt; sourceTree = SOURCE_ROOT; };
 		AF80FD141DF8BEC600AAD646 /* macros.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macros.txt; sourceTree = SOURCE_ROOT; };
 		AF80FD161DF8C1E900AAD646 /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = SOURCE_ROOT; };
@@ -47,6 +49,20 @@
 		AF9BF5D11DF73E9B000B148B /* baseClasses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baseClasses.txt; sourceTree = SOURCE_ROOT; };
 		AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSpecialWords.swift; sourceTree = "<group>"; };
 		AFCEA3FF1DF1EC7100D67622 /* WIZSyntaxPatternFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZSyntaxPatternFormatter.swift; sourceTree = "<group>"; };
+		AFD9F0F81E059D4A00DC258E /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Bold.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Bold.otf"; sourceTree = "<group>"; };
+		AFD9F0F91E059D4A00DC258E /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-BoldItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		AFD9F0FA1E059D4A00DC258E /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Heavy.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Heavy.otf"; sourceTree = "<group>"; };
+		AFD9F0FB1E059D4A00DC258E /* SF-UI-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-HeavyItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		AFD9F0FC1E059D4A00DC258E /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
+		AFD9F0FD1E059D4A00DC258E /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-LightItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		AFD9F0FE1E059D4A00DC258E /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Medium.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		AFD9F0FF1E059D4A00DC258E /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-MediumItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		AFD9F1001E059D4A00DC258E /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		AFD9F1011E059D4A00DC258E /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-RegularItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		AFD9F1021E059D4A00DC258E /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
+		AFD9F1031E059D4A00DC258E /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-SemiboldItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		AFD9F1041E059D4A00DC258E /* SF-UI-Text-Ultrathin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Ultrathin.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-Ultrathin.otf"; sourceTree = "<group>"; };
+		AFD9F1051E059D4A00DC258E /* SF-UI-Text-UltrathinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-UltrathinItalic.otf"; path = "../../../../Downloads/SF UI/SF-UI-Text/SF-UI-Text-UltrathinItalic.otf"; sourceTree = "<group>"; };
 		AFE0A9821DEB587E00438CD7 /* WIZHierarchyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZHierarchyViewController.swift; sourceTree = "<group>"; };
 		AFE0A9851DEB58B100438CD7 /* WIZHierarchyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WIZHierarchyViewModel.swift; path = Assets.xcassets/WIZHierarchyViewModel.swift; sourceTree = "<group>"; };
 		AFE0A9871DEB595000438CD7 /* WIZCodePresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIZCodePresentationViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +183,20 @@
 		AFF666B81DE9E72100BF28E4 /* Wizard */ = {
 			isa = PBXGroup;
 			children = (
+				AFD9F0F81E059D4A00DC258E /* SF-UI-Text-Bold.otf */,
+				AFD9F0F91E059D4A00DC258E /* SF-UI-Text-BoldItalic.otf */,
+				AFD9F0FA1E059D4A00DC258E /* SF-UI-Text-Heavy.otf */,
+				AFD9F0FB1E059D4A00DC258E /* SF-UI-Text-HeavyItalic.otf */,
+				AFD9F0FC1E059D4A00DC258E /* SF-UI-Text-Light.otf */,
+				AFD9F0FD1E059D4A00DC258E /* SF-UI-Text-LightItalic.otf */,
+				AFD9F0FE1E059D4A00DC258E /* SF-UI-Text-Medium.otf */,
+				AFD9F0FF1E059D4A00DC258E /* SF-UI-Text-MediumItalic.otf */,
+				AFD9F1001E059D4A00DC258E /* SF-UI-Text-Regular.otf */,
+				AFD9F1011E059D4A00DC258E /* SF-UI-Text-RegularItalic.otf */,
+				AFD9F1021E059D4A00DC258E /* SF-UI-Text-Semibold.otf */,
+				AFD9F1031E059D4A00DC258E /* SF-UI-Text-SemiboldItalic.otf */,
+				AFD9F1041E059D4A00DC258E /* SF-UI-Text-Ultrathin.otf */,
+				AFD9F1051E059D4A00DC258E /* SF-UI-Text-UltrathinItalic.otf */,
 				AF9BF5D11DF73E9B000B148B /* baseClasses.txt */,
 				AF80FD121DF8BD5000AAD646 /* otherFunctions.txt */,
 				AF80FD141DF8BEC600AAD646 /* macros.txt */,
@@ -180,6 +210,7 @@
 				AF9BF5D31DF741BB000B148B /* WIZSpecialWords.swift */,
 				AFFC595A1DF178E800725056 /* WIZCommonVariables.swift */,
 				AF888AA01DFA03AB00912779 /* WIZCustomSpecialWordsFinder.swift */,
+				AF60D6441DFC40E200171D49 /* WIZCustomSpecialWordsFinderObjectiveC.swift */,
 				AFF666BD1DE9E72100BF28E4 /* Assets.xcassets */,
 				AFF666BF1DE9E72100BF28E4 /* Main.storyboard */,
 				AFF666C21DE9E72100BF28E4 /* Info.plist */,
@@ -326,6 +357,7 @@
 			files = (
 				AFEC78FA1DEA2E0F0021F991 /* WIZProjectHierarchyModel.swift in Sources */,
 				AFF666CD1DE9EB9100BF28E4 /* WIZMainViewController.swift in Sources */,
+				AF60D6451DFC40E200171D49 /* WIZCustomSpecialWordsFinderObjectiveC.swift in Sources */,
 				AFE0A9881DEB595000438CD7 /* WIZCodePresentationViewController.swift in Sources */,
 				AFF666BA1DE9E72100BF28E4 /* AppDelegate.swift in Sources */,
 				AFFC59591DF1702200725056 /* WIZProjectHierarchyFile.swift in Sources */,

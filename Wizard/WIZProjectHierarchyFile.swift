@@ -8,6 +8,7 @@
 
 import Cocoa
 
+
 //--------------------------------------------------------------------------------------------------
 // MARK: - WIZProjectHierarchyFile Implementation
 
@@ -21,6 +22,11 @@ class WIZProjectHierarchyFile: WIZProjectHierarchyModel {
   
   public private(set) var formatterCode : NSAttributedString?
   
+  public private(set) var classes : [WIZAbstractClassModel]?
+  
+  
+  //................................................................................................
+  // MARK: - Public Methods
   
   func updateContent () {
     
@@ -38,3 +44,68 @@ class WIZProjectHierarchyFile: WIZProjectHierarchyModel {
     }
   }
 }
+
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZParametersModel
+
+class WIZParametersModel {
+  
+  var name : String
+  
+  var type : String
+  
+  var internals: [String]
+
+  
+  //................................................................................................
+  // MARK: - Inits
+  
+  init(name: String, type: String, internals: [String]) {
+    
+    self.name = name
+    
+    self.type = type
+    
+    self.internals = internals
+  }
+}
+
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZClassModel
+
+class WIZAbstractClassModel {
+  
+  var parameters: [WIZParametersModel]
+  
+  var parentClass: String
+  
+  var protocols: [String]?
+  
+  
+  //................................................................................................
+  // MARK: - Inits
+  
+  init(parameters: [WIZParametersModel], parentClass: String, protocols: [String]?) {
+    
+    self.parameters = parameters
+    
+    self.parentClass = parentClass
+    
+    self.protocols = protocols
+  }
+  
+  convenience init(parameters: [WIZParametersModel], parentClass: String) {
+    
+    self.init(parameters: parameters, parentClass: parentClass, protocols: nil)
+  }
+}
+
+class WIZObjectiveCClassModel: WIZAbstractClassModel {
+  
+  var isInternal = false
+}
+
+
+

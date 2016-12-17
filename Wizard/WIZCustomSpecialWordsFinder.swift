@@ -8,85 +8,64 @@
 
 import Cocoa
 
-class WIZCustomSpecialWordsFinder {
+
+enum LanguageType : String {
+
+  case ObjectiveC
+}
+
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZCustomSpecialWordsFinderProtocol Definition
+
+protocol WIZCustomSpecialWordsFinderProtocol {
+  
+  func findCustomClasses (url: URL) -> [String]
+  
+  func findWithKeywords (keyword: String, code: NSString) -> [String]
+  
+//  func findParameters (string: NSString) -> [(range: NSRange, color: NSColor)]
+}
+
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZCustomSpecialWordsFinder Abstract Class
+
+class WIZCustomSpecialWordsFinder: WIZCustomSpecialWordsFinderProtocol {
   
   func findCustomClasses (url: URL) -> [String] {
-    
-    var code = ""
-    
-    do {
-    
-      code = try String.init(contentsOf: url)
-    }
-    catch {
-      
-      return []
-    }
-    
-    code = code.replacingOccurrences(of: "(", with: " ")
-    code = code.replacingOccurrences(of: ")", with: " ")
-    code = code.replacingOccurrences(of: "<", with: " ")
-    code = code.replacingOccurrences(of: ">", with: " ")
-    code = code.replacingOccurrences(of: ":", with: " ")
-    
-    var result = Array<String>()
-    
-    result.append(contentsOf: findWithKeywords(keyword: "@interface", code: code as NSString))
-    
-    result.append(contentsOf: findWithKeywords(keyword: "@protocol", code: code as NSString))
-    
-    return result
+  
+    preconditionFailure("This method must be overridden")
   }
   
   func findWithKeywords (keyword: String, code: NSString) -> [String] {
-    
-    var resultArray = Array<String>()
-    
-    var checkCode = code
-    
-    var range = checkCode.range(of: keyword)
   
-    
-    while range.length > 0 {
-    
-      let location = range.location + range.length
+    preconditionFailure("This method must be overridden")
+  }
+  
+  func findParameters (string: NSString) -> [(range: NSRange, color: NSColor)] {
+  
+    preconditionFailure("This method must be overridden")
+  }
+}
+
+
+//--------------------------------------------------------------------------------------------------
+// MARK: - WIZLanguageFinderAssembly Implementation
+
+class WIZLanguageFinderAssembly {
+  
+  class func createFinder (forLanguage languageType: LanguageType) -> WIZCustomSpecialWordsFinder {
+  
+    switch languageType {
       
-      if location > checkCode.length
-      {
-        return resultArray
-      }
+    case .ObjectiveC:
       
-      checkCode = checkCode.substring(from: location) as NSString
+      return WIZCustomSpecialWordsFinderObjectiveC()
       
-      var startLocation = -1
+    default:
       
-      for index in 0..<checkCode.length {
-        
-        let symbolRange = NSMakeRange(index, 1)
-        
-        let symbol = checkCode.substring(with: symbolRange)
-        
-        if symbol != " " && startLocation < 0 {
-        
-          startLocation = index
-        }
-        else if symbol == " " && startLocation >= 0 {
-        
-          let resultRange = NSMakeRange(startLocation, index - startLocation)
-          
-          let result = checkCode.substring(with: resultRange)
-          
-          resultArray.append(result)
-          
-          checkCode = checkCode.substring(from: resultRange.location + resultRange.length) as NSString
-          
-          range = checkCode.range(of: keyword)
-          
-          break
-        }
-      }
+      return WIZCustomSpecialWordsFinder()
     }
-    
-    return resultArray
   }
 }

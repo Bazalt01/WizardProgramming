@@ -49,7 +49,7 @@ class WIZProjectHierarchyDirectoryInfo: WIZProjectHierarchyModel {
             
           else {
             
-            let finder = WIZCustomSpecialWordsFinder()
+            let finder = WIZLanguageFinderAssembly.createFinder(forLanguage: .ObjectiveC)
             
             let customClasses = finder.findCustomClasses(url: checkURL)
             
